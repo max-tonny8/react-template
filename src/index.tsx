@@ -12,7 +12,7 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <div className='bg-black w-full'>
-      <div className='flex mx-auto 2xl:max-w-[1440px] px-[70px] w-full relative z-[100]'>
+      <div className='flex mx-auto 2xl:max-w-[1440px] px-[70px] max-md:px-[35px] w-full relative z-[100]'>
         <Nav />
       </div>
       <div className='flex mx-auto 2xl:max-w-[1440px] w-full'>
