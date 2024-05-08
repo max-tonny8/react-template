@@ -1,7 +1,7 @@
 import React from "react";
-import About from "./components/About";
-import Sales from "./components/Sales";
-import Frequency from "./components/Frequency";
+import About from "./components/pages/About";
+import Sales from "./components/pages/Sales";
+import Frequency from "./components/pages/Frequency";
 
 const Main = () => {
     return (
