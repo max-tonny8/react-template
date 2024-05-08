@@ -1,11 +1,18 @@
 import React from "react";
-import ComButton from "../items/ComButton";
-import LatestSales from "../items/LatestSales";
-import Utility from "../items/Utility";
-import PercentBar from "../items/PercentBar";
+import { ComButton, LatestSales, Utility, PercentBar } from "../items";
+
+interface latest {
+    value: string,
+    name: string
+}
+
+interface per {
+    content: string,
+    percent: string
+}
 
 const Sales = () => {
-    const latestList = [
+    const latestList: latest[] = [
         {
             value: "9,999",
             name: "items"
@@ -24,7 +31,7 @@ const Sales = () => {
         }
     ];
 
-    const utilityList = [
+    const utilityList: string[] = [
         "Non-Custodial Staking on MDToken.io",
         "Non-Custodial Staking on Cardano Lands",
         "Non-Custodial Staking on Ape Society",
@@ -34,7 +41,7 @@ const Sales = () => {
         "Access to MD Racing Game"
     ];
 
-    const percentList = [
+    const percentList: per[] = [
         {
             content: "Highest Sale: 76,069 ADA",
             percent: "100%",

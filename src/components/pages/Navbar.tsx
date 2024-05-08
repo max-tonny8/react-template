@@ -1,14 +1,11 @@
 import React, { useState } from 'react';
-import NavMobileItem from '../items/NavMobileItem';
-import SocialMobileIcon from '../items/SocialMobileIcon';
-import NavItem from '../items/NavItem';
-import SocialIcon from '../items/SocialIcon';
+import { NavMobileItem, SocialMobileIcon, NavItem, SocialIcon } from '../items';
 
 const Navbar: React.FC = () => {
     const [toggleMenu, setToggleMenu] = useState(false);
 
-    const navList = ["MAD DOGS", "MAD DOG CARS", "MD RACERS", "MD LICENSE", "MD RACING"];
-    const socialIcon = ["./image/Twitter_Logo 1.svg", "./image/Instagram_Logo 1.svg", "./image/Discord-Logo 1.svg", "./image/youtube_icon 2.svg"];
+    const navList: string[] = ["MAD DOGS", "MAD DOG CARS", "MD RACERS", "MD LICENSE", "MD RACING"];
+    const socialIcon: string[] = ["./image/Twitter_Logo 1.svg", "./image/Instagram_Logo 1.svg", "./image/Discord-Logo 1.svg", "./image/youtube_icon 2.svg"];
 
     return (
         <div className="bg-black flex justify-between w-full items-center xl:py-4">

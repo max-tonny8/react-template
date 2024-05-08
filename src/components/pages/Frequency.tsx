@@ -1,8 +1,13 @@
 import React from "react";
-import FrequencyItem from "../items/FrequencyItem";
+import { FrequencyItem } from "../items";
+
+interface List {
+    title: string,
+    content: string
+}
 
 const Frequency = () => {
-    const frequencyList = [
+    const frequencyList: List[] = [
         {
             title: "When did Mad Dogs release?",
             content: "The first collection, Mad Dogs, was released in April of 2022. ",
@@ -20,7 +25,7 @@ const Frequency = () => {
             content: "There are many different utilities you acquire with holding a Mad Dog. It is your ticket to play our game MD Racing which V1.01 will be released in November! Some other utilities include royalties paid out monthly from collection volume, MD Token accumulation, improvements to cars statistics, in-game achievements for MD Tokens and NFT airdrops, WL opportunities, and holder role benefits. ",
         }
     ]
-    
+
     return (
         <div className="w-full bg-black">
             <div className="flex px-[122px] max-xl:px-[25px] mx-auto">

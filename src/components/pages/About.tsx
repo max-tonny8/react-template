@@ -1,8 +1,8 @@
 import React from "react";
-import ComButton from "../items/ComButton";
+import { ComButton } from "../items";
 
 const About = () => {
-    const btnContentList = ["whitepaper", "Ranking"];
+    const btnContentList: string[] = ["whitepaper", "Ranking"];
 
     return (
         <div className="relative bg-about bg-cover z-[90] bg-bottom h-[717px] max-sm:h-[600px]">
