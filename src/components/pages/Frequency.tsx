@@ -34,7 +34,7 @@ const Frequency = () => {
                         <p className="text-[70px] font-bold uppercase max-md:text-[36px]">FREQUENTLY ASKED QUESTIONS</p>
                     </div>
                     {frequencyList.map((item, index) => (
-                        <FrequencyItem title={item.title} content={item.content} />
+                        <FrequencyItem key={index} title={item.title} content={item.content} />
                     ))}
                 </div>
             </div>

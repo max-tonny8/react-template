@@ -16,7 +16,7 @@ const About = () => {
                     <p className="text-[24px] font-normal leading-normal mt-6 max-xl:text-[18px] max-sm:text-[14px] max-sm:font-normal">Our focus with our first launch was not just a brand in the virtual world, but rather a brand in the real world. Owning a Mad Dog gives you exclusive access to a plethora of benefits in both real and the virtual world.</p>
                     <div className="flex mt-[36px] max-lg:flex-col text-black gap-10">
                         {btnContentList.map((item, index) => (
-                            <ComButton content={item} />
+                            <ComButton key={index} content={item} />
                         ))}
                     </div>
                 </div>
